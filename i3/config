@@ -66,6 +66,8 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 
 exec --no-startup-id "setxkbmap -layout gb,ru -variant ,phonetic_mac -option 'grp:alt_shift_toggle'"
 
+exec --no-startup-id redshift -l 51.50:0 -O 2000
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
