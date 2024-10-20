@@ -64,7 +64,7 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
-exec --no-startup-id "setxkbmap -layout gb,ru -variant ,phonetic_mac -option 'grp:alt_shift_toggle'"
+exec --no-startup-id "setxkbmap -layout us,gb,ru -variant ,,phonetic_mac -option 'grp:alt_shift_toggle'"
 
 exec --no-startup-id redshift -l 51.50:0.1 -t 5500:2000 -m randr
 
