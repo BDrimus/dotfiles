@@ -70,7 +70,7 @@ install_packages() {
         sudo pacman -Syu --noconfirm
 
         # Install packages
-        xargs -a "/tmp/$package_file" grep -v '^#' | sudo pacman -S --noconfirm --needed
+        grep -v '^#' "/tmp/$package_file" | xargs sudo pacman -S --noconfirm --needed
         print_success "Packages installed successfully."
         rm "/tmp/$package_file"
     else
