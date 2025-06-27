@@ -28,6 +28,7 @@ install_configs() {
 
     # Create directories if they don't exist
     mkdir -p "$CONFIG_DIR/i3"
+    mkdir -p "$CONFIG_DIR/i3status"
 
     # Download and install i3 config
     if curl -sS --fail "$REPO_URL/i3/config" -o "$CONFIG_DIR/i3/config"; then
@@ -41,7 +42,7 @@ install_configs() {
     if curl -sS --fail "$REPO_URL/i3/i3status/config" -o "$CONFIG_DIR/i3status/config"; then
         print_success "i3status config installed."
     else
-        print_error "Failed to download i3status.conf."
+        print_error "Failed to download i3status config."
         return 1
     fi
 }
