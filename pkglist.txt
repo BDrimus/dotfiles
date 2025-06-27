@@ -1,0 +1,12 @@
+# --- Core Packages ---
+i3-wm
+i3status
+dmenu
+
+# --- Utilities ---
+git
+curl
+wget
+
+zed
+obsidian
