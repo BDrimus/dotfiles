@@ -38,7 +38,7 @@ install_configs() {
     fi
 
     # Download and install i3status config
-    if curl -sS --fail "$REPO_URL/i3/i3status.conf" -o "$CONFIG_DIR/i3/i3status.conf"; then
+    if curl -sS --fail "$REPO_URL/i3/i3status.conf" -o "$CONFIG_DIR/i3status.conf"; then
         print_success "i3status.conf installed."
     else
         print_error "Failed to download i3status.conf."
